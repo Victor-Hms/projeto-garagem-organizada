@@ -1,0 +1,176 @@
+
+/* ==========================================
+   CONFIGURAÇÕES GLOBAIS E TIPOGRAFIA
+   ========================================== */
+body {
+    background-color: #080d1a;
+    color: #ffffff;
+    /* 1. font-family */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================
+   CABEÇALHO (HEADER)
+   ========================================== */
+header {
+    background-color: #111a2b;
+    padding: 20px;
+    /* 2. text-align */
+    text-align: center;
+}
+
+header h1 {
+    color: #4b8dff;
+    margin: 0 0 5px 0;
+    /* 3. font-size */
+    font-size: 28px;
+    /* 4. font-weight */
+    font-weight: bold;
+    /* 5. text-transform */
+    text-transform: uppercase;
+    /* 6. letter-spacing */
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #aab6cc;
+    margin: 0;
+    font-size: 14px;
+    /* 7. font-style */
+    font-style: italic;
+}
+
+/* ==========================================
+   BARRA DE TÍTULO DA PÁGINA
+   ========================================== */
+.titulo {
+    background-color: #1c2e4d;
+    padding: 15px;
+    text-align: center;
+}
+
+.titulo h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ==========================================
+   ESTRUTURA DE DIVISÃO (PÁGINA)
+   ========================================== */
+.pagina {
+    width: 100%;
+    overflow: hidden;
+    background-color: #080d1a;
+}
+
+/* ==========================================
+   MENU LATERAL (NAV)
+   ========================================== */
+nav {
+    float: left;
+    width: 20%;
+    background-color: #111a2b;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    min-height: 500px;
+}
+
+nav a {
+    display: block;
+    color: #aab6cc;
+    /* 8. text-decoration */
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* ==========================================
+   CONTEÚDO PRINCIPAL (MAIN)
+   ========================================== */
+main {
+    margin-left: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #080d1a;
+}
+
+main section {
+    background-color: #111a2b;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #4b8dff;
+}
+
+main h2 {
+    color: #4b8dff;
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main p {
+    color: #aab6cc;
+    margin-bottom: 0;
+    font-size: 14px;
+    /* 9. line-height */
+    line-height: 1.5;
+    /* 10. word-spacing */
+    word-spacing: 1px;
+    /* 11. text-indent */
+    text-indent: 8px;
+}
+
+/* ==========================================
+   RODAPÉ (FOOTER)
+   ========================================== */
+footer {
+    background-color: #111a2b;
+    color: #aab6cc;
+    padding: 15px;
+    text-align: center;
+    clear: both;
+    letter-spacing: 1px;
+    /* 12. font */
+    font: italic 13px Arial, sans-serif;
+}
+
+/* ==========================================
+   FORMULÁRIO DE PERFIL
+   ========================================== */
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+form input {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #080d1a;
+    color: #ffffff;
+    border: 1px solid #1c2e4d;
+    font-size: 14px;
+}
+
+form button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4b8dff;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+}

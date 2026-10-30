@@ -1,98 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil - Garagem Organizada</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #080d1a;
-            color: #e8eef8;
-        }
-
-        header {
-            padding: 20px 25px;
-            background: #111a2b;
-            color: #4b8dff;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        .titulo {
-            margin: 0;
-            padding: 18px;
-            text-align: center;
-            background: #1c2e4d;
-        }
-
-        .pagina {
-            display: flex;
-            min-height: 400px;
-        }
-
-        nav {
-            width: 200px;
-            flex-shrink: 0;
-            padding: 20px;
-            background: #111a2b;
-        }
-
-        nav a {
-            display: block;
-            padding: 12px;
-            margin-bottom: 8px;
-            border-radius: 5px;
-            color: #e8eef8;
-            text-decoration: none;
-        }
-
-        main {
-            flex: 1;
-            padding: 25px;
-        }
-
-        section {
-            margin-top: 20px;
-            padding: 15px;
-            background: #111a2b;
-            border-left: 3px solid #4b8dff;
-            border-radius: 5px;
-        }
-
-        p {
-            color: #aab6cc;
-            line-height: 1.6;
-        }
-
-        footer {
-            padding: 18px;
-            text-align: center;
-            background: #111a2b;
-            color: #aab6cc;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
     <header>
         <h1>Garagem Organizada</h1>
     </header>
 
-    <h2 class="titulo">Meu Perfil</h2>
+    <h2 class="titulo">Perfil</h2>
 
     <div class="pagina">
+
         <nav>
-            <a href="index.html">Painel</a>
-            <a href="veiculos.html">Meus veículos</a>
+            <a href="index.html">Início</a>
+            <a href="veiculos.html">Veículos</a>
             <a href="despesas.html">Despesas</a>
             <a href="manutencoes.html">Manutenções</a>
             <a href="historico.html">Histórico</a>
-            <a href="perfil.html">Meu perfil</a>
+            <a href="perfil.html">Perfil</a>
         </nav>
 
         <main>
@@ -100,19 +32,44 @@
 
             <section>
                 <h3>Dados pessoais</h3>
-                <p>Nome: Proprietário da garagem</p>
-                <p>E-mail: exemplo@email.com</p>
+
+                <form>
+
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome"
+                           placeholder="Digite seu nome">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Digite seu e-mail">
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone"
+                           placeholder="Digite seu telefone">
+
+                    <button type="button">Salvar alterações</button>
+
+                </form>
+
             </section>
 
             <section>
                 <h3>Sobre o sistema</h3>
-                <p>O Garagem Organizada ajuda a organizar veículos,
-                despesas e manutenções em um único lugar.</p>
+
+                <p>
+                    O Garagem Organizada ajuda a organizar veículos,
+                    despesas e manutenções em um único lugar.
+                </p>
             </section>
+
         </main>
+
     </div>
 
-    <footer>Garagem Organizada - Projeto acadêmico</footer>
+    <footer>
+        Garagem Organizada - Projeto acadêmico
+    </footer>
 
 </body>
 </html>
+
