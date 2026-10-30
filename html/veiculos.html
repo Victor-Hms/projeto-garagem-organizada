@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Veículos - Garagem Organizada</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #080d1a;
+            color: #e8eef8;
+        }
+
+        header {
+            padding: 20px 25px;
+            background: #111a2b;
+            color: #4b8dff;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .titulo {
+            margin: 0;
+            padding: 18px;
+            text-align: center;
+            background: #1c2e4d;
+        }
+
+        .pagina {
+            display: flex;
+            min-height: 400px;
+        }
+
+        nav {
+            width: 200px;
+            flex-shrink: 0;
+            padding: 20px;
+            background: #111a2b;
+        }
+
+        nav a {
+            display: block;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            color: #e8eef8;
+            text-decoration: none;
+        }
+
+        main {
+            flex: 1;
+            padding: 25px;
+        }
+
+        section {
+            margin-top: 20px;
+            padding: 15px;
+            background: #111a2b;
+            border-left: 3px solid #4b8dff;
+            border-radius: 5px;
+        }
+
+        p {
+            color: #aab6cc;
+            line-height: 1.6;
+        }
+
+        footer {
+            padding: 18px;
+            text-align: center;
+            background: #111a2b;
+            color: #aab6cc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Garagem Organizada</h1>
+    </header>
+
+    <h2 class="titulo">Meus Veículos</h2>
+
+    <div class="pagina">
+        <nav>
+            <a href="index.html">Painel</a>
+            <a href="veiculos.html">Meus veículos</a>
+            <a href="despesas.html">Despesas</a>
+            <a href="manutencoes.html">Manutenções</a>
+            <a href="historico.html">Histórico</a>
+            <a href="perfil.html">Meu perfil</a>
+        </nav>
+
+        <main>
+            <h2>Veículos cadastrados</h2>
+            <p>Consulte as informações dos seus veículos.</p>
+
+            <section>
+                <h3>Carro</h3>
+                <p>Modelo: Honda Civic</p>
+                <p>Ano: 2022</p>
+                <p>Tipo: Automóvel</p>
+            </section>
+
+            <section>
+                <h3>Motocicleta</h3>
+                <p>Modelo: Honda CG 160</p>
+                <p>Ano: 2024</p>
+                <p>Tipo: Motocicleta</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>Garagem Organizada - Projeto acadêmico</footer>
+
+</body>
+</html>
