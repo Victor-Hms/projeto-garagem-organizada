@@ -1,50 +1,36 @@
 
-/* ==========================================
-   CONFIGURAÇÕES GLOBAIS E TIPOGRAFIA
-   ========================================== */
+
 body {
     background-color: #080d1a;
     color: #ffffff;
-    /* 1. font-family */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/* ==========================================
-   CABEÇALHO (HEADER)
-   ========================================== */
 header {
     background-color: #111a2b;
-    padding: 20px;
-    /* 2. text-align */
+    padding: 10px;
     text-align: center;
 }
 
-header h1 {
-    color: #4b8dff;
-    margin: 0 0 5px 0;
-    /* 3. font-size */
-    font-size: 28px;
-    /* 4. font-weight */
-    font-weight: bold;
-    /* 5. text-transform */
-    text-transform: uppercase;
-    /* 6. letter-spacing */
-    letter-spacing: 2px;
+.logo {
+    width: 220px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 header p {
     color: #aab6cc;
-    margin: 0;
+    margin: 5px 0 0 0;
     font-size: 14px;
-    /* 7. font-style */
     font-style: italic;
 }
 
-/* ==========================================
-   BARRA DE TÍTULO DA PÁGINA
-   ========================================== */
 .titulo {
     background-color: #1c2e4d;
     padding: 15px;
@@ -59,18 +45,13 @@ header p {
     letter-spacing: 1px;
 }
 
-/* ==========================================
-   ESTRUTURA DE DIVISÃO (PÁGINA)
-   ========================================== */
 .pagina {
     width: 100%;
     overflow: hidden;
     background-color: #080d1a;
+    flex: 1;
 }
 
-/* ==========================================
-   MENU LATERAL (NAV)
-   ========================================== */
 nav {
     float: left;
     width: 20%;
@@ -83,7 +64,6 @@ nav {
 nav a {
     display: block;
     color: #aab6cc;
-    /* 8. text-decoration */
     text-decoration: none;
     padding: 10px;
     margin-bottom: 5px;
@@ -91,9 +71,6 @@ nav a {
     font-weight: bold;
 }
 
-/* ==========================================
-   CONTEÚDO PRINCIPAL (MAIN)
-   ========================================== */
 main {
     margin-left: 20%;
     padding: 20px;
@@ -119,17 +96,11 @@ main p {
     color: #aab6cc;
     margin-bottom: 0;
     font-size: 14px;
-    /* 9. line-height */
     line-height: 1.5;
-    /* 10. word-spacing */
     word-spacing: 1px;
-    /* 11. text-indent */
     text-indent: 8px;
 }
 
-/* ==========================================
-   RODAPÉ (FOOTER)
-   ========================================== */
 footer {
     background-color: #111a2b;
     color: #aab6cc;
@@ -137,13 +108,22 @@ footer {
     text-align: center;
     clear: both;
     letter-spacing: 1px;
-    /* 12. font */
-    font: italic 13px Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: normal;
+    box-sizing: border-box;
 }
 
-/* ==========================================
-   FORMULÁRIO DE PERFIL
-   ========================================== */
+footer p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: normal;
+    color: #aab6cc;
+}
 
 form label {
     display: block;
@@ -174,3 +154,4 @@ form button {
     font-size: 14px;
     font-weight: bold;
 }
+
