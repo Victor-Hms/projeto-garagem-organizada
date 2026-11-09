@@ -1,67 +1,110 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veículos - Garagem Organizada</title>
+    <title>Minha Garagem - Garagem Organizada</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="pagina-inicial">
 
-<header>
-    <img src="../img/Logo-Garagem Organizada.png" alt="Logo Garagem Organizada" class="logo">
-    <p>Controle simples para seus veículos</p>
-</header>
+<div class="dashboard">
 
-<div class="titulo">
-    <h2>Veículos</h2>
-</div>
+    <aside class="menu-lateral">
 
-<div class="pagina">
+        <div class="marca">
+            <img src="../img/Logo-Garagem Organizada.png" alt="Logo Garagem Organizada" class="logo">
+            <p>CONTROLE AUTOMOTIVO</p>
+        </div>
 
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="veiculos.html">Veículos</a>
-        <a href="despesas.html">Despesas</a>
-        <a href="manutencoes.html">Manutenções</a>
-        <a href="historico.html">Histórico</a>
-        <a href="perfil.html">Perfil</a>
-    </nav>
+        <nav class="menu-dashboard">
+            <a href="index.html">Início</a>
+            <a href="veiculos.html" class="ativo">Veículos</a>
+            <a href="despesas.html">Despesas</a>
+            <a href="manutencoes.html">Manutenções</a>
+            <a href="historico.html">Histórico</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
 
-    <main>
-        <h2>Veículos cadastrados</h2>
-        <p>Consulte as informações dos seus veículos.</p>
+        <div class="menu-rodape">
+            <p>Garagem Organizada</p>
+            <span>Controle e organização</span>
+        </div>
 
-        <section class="veiculo">
-            <img src="../img/bmw-m3.png" alt="BMW M3">
+    </aside>
 
+    <main class="dashboard-conteudo">
+
+        <div class="dashboard-topo">
             <div>
-                <h3>BMW M3</h3>
-                <p>Marca: BMW</p>
-                <p>Tipo: Automóvel</p>
+                <h1>Minha Garagem</h1>
+                <p>Gerencie seus veículos e acompanhe suas informações.</p>
+            </div>
+
+            <span class="status-sistema">GARAGEM ATIVA</span>
+        </div>
+
+        <section class="boas-vindas">
+            <span>MEUS VEÍCULOS</span>
+            <h2>Seus veículos cadastrados</h2>
+            <p>Consulte e gerencie os veículos registrados na sua garagem.</p>
+        </section>
+
+        <section>
+            <div class="botoes-acoes">
+                <a href="#">+ Adicionar veículo</a>
             </div>
         </section>
 
         <section class="veiculo">
-            <img src="../img/nivus-2024.png" alt="Volkswagen Nivus 2024">
+
+            <img src="../img/bmw-m3.png" alt="BMW M3" width="320">
 
             <div>
-                <h3>Volkswagen Nivus 2024</h3>
+                <h2>BMW M3</h2>
+                <p>Marca: BMW</p>
+                <p>Tipo: Automóvel</p>
+            </div>
+
+            <div class="botoes-acoes">
+                <a href="#">Visualizar</a>
+                <a href="#">Editar</a>
+                <a href="#">Excluir</a>
+            </div>
+
+        </section>
+
+        <section class="veiculo">
+
+            <img src="../img/nivus-2024.png" alt="Volkswagen Nivus 2024" width="320">
+
+            <div>
+                <h2>Volkswagen Nivus 2024</h2>
                 <p>Marca: Volkswagen</p>
                 <p>Ano: 2024</p>
                 <p>Tipo: Automóvel</p>
             </div>
+
+            <div class="botoes-acoes">
+                <a href="#">Visualizar</a>
+                <a href="#">Editar</a>
+                <a href="#">Excluir</a>
+            </div>
+
         </section>
+
+        <footer class="rodape-dashboard">
+            Garagem Organizada - Controle e organização de veículos.
+        </footer>
+
     </main>
 
 </div>
 
-<footer>
-   Garagem Organizada
-</footer>
-
 </body>
 </html>
+
 
 

@@ -1,49 +1,124 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Garagem Organizada</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Garagem Organizada</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="pagina-inicial">
 
-<header>
-    <img src="../img/Logo-Garagem Organizada.png" alt="Logo Garagem Organizada" class="logo">
-    <p>Controle simples para seus veículos</p>
-</header>
+    <div class="dashboard">
 
-<div class="titulo">
-    <h2>Página Inicial</h2>
-</div>
+        <aside class="menu-lateral">
 
-<div class="pagina">
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="veiculos.html">Veículos</a>
-        <a href="despesas.html">Despesas</a>
-        <a href="manutencoes.html">Manutenções</a>
-        <a href="historico.html">Histórico</a>
-        <a href="perfil.html">Perfil</a>
-    </nav>
+            <div class="marca">
+                <img src="../img/Logo-Garagem Organizada.png"
+                     alt="Logo Garagem Organizada"
+                     class="logo">
+                <p>CONTROLE AUTOMOTIVO</p>
+            </div>
 
-    <main>
-        <section>
-            <h2>Bem-vindo!</h2>
-            <p>Organize as informações dos seus veículos em um só lugar.</p>
-        </section>
+            <nav class="menu-dashboard">
+                <a href="index.html" class="ativo">Início</a>
+                <a href="veiculos.html">Veículos</a>
+                <a href="despesas.html">Despesas</a>
+                <a href="manutencoes.html">Manutenções</a>
+                <a href="historico.html">Histórico</a>
+                <a href="perfil.html">Perfil</a>
+            </nav>
 
-        <section>
-            <h2>O que você pode fazer?</h2>
-            <p>Cadastrar veículos, registrar despesas e acompanhar manutenções.</p>
-        </section>
-    </main>
-</div>
+            <div class="menu-rodape">
+                <p>GARAGEM ORGANIZADA</p>
+                <span>Seu controle automotivo</span>
+            </div>
 
-<footer>
-    Garagem Organizada
-</footer>
+        </aside>
+
+        <main class="dashboard-conteudo">
+
+            <div class="dashboard-topo">
+                <div>
+                    <h1>Painel de Controle</h1>
+                    <p>Bem-vindo! Gerencie sua garagem em um só lugar.</p>
+                </div>
+                <span class="status-sistema">SISTEMA ATIVO</span>
+            </div>
+
+            <section class="boas-vindas">
+                <div>
+                    <span>VISÃO GERAL</span>
+                    <h2>Bem-vindo à sua garagem!</h2>
+                    <p>Acompanhe seus veículos, despesas e manutenções.</p>
+                </div>
+            </section>
+
+            <section class="indicadores">
+
+                <div class="cartao-indicador">
+                    <span>VEÍCULOS CADASTRADOS</span>
+                    <h2>02</h2>
+                    <p>Veículos na garagem</p>
+                </div>
+
+                <div class="cartao-indicador">
+                    <span>DESPESAS REGISTRADAS</span>
+                    <h2>--</h2>
+                    <p>Acompanhe seus gastos</p>
+                </div>
+
+                <div class="cartao-indicador">
+                    <span>MANUTENÇÕES PENDENTES</span>
+                    <h2>--</h2>
+                    <p>Serviços a realizar</p>
+                </div>
+
+                <div class="cartao-indicador">
+                    <span>REGISTROS NO MÊS</span>
+                    <h2>--</h2>
+                    <p>Atividades registradas</p>
+                </div>
+
+            </section>
+
+            <section class="acoes-rapidas">
+
+                <h2>Ações rápidas</h2>
+
+                <div class="botoes-acoes">
+                    <a href="veiculos.html">+ Adicionar veículo</a>
+                    <a href="despesas.html">+ Registrar despesa</a>
+                    <a href="manutencoes.html">+ Agendar manutenção</a>
+                </div>
+
+            </section>
+
+            <div class="dashboard-inferior">
+
+                <section class="painel-despesas">
+                    <h2>Resumo de despesas</h2>
+                    <p>Seus gastos serão apresentados aqui.</p>
+
+                    <div class="grafico-vazio">
+                        <span>Nenhuma despesa registrada.</span>
+                    </div>
+                </section>
+
+                <section class="painel-manutencoes">
+                    <h2>Próximas manutenções</h2>
+                    <p>Nenhuma manutenção cadastrada.</p>
+                </section>
+
+            </div>
+
+            <footer class="rodape-dashboard">
+                Garagem Organizada - Controle e organização automotiva
+            </footer>
+
+        </main>
+
+    </div>
 
 </body>
 </html>

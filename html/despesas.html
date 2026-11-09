@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,58 +8,114 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="pagina-inicial">
 
-<header>
-    <img src="../img/Logo-Garagem Organizada.png" alt="Logo Garagem Organizada" class="logo">
-    <p>Controle simples para seus veículos</p>
-</header>
+<div class="dashboard">
 
-<div class="titulo">
-    <h2>Despesas</h2>
-</div>
+    <aside class="menu-lateral">
 
-<div class="pagina">
+        <div class="marca">
+            <img src="../img/Logo-Garagem Organizada.png" alt="Logo Garagem Organizada" class="logo">
+            <p>CONTROLE AUTOMOTIVO</p>
+        </div>
 
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="veiculos.html">Veículos</a>
-        <a href="despesas.html">Despesas</a>
-        <a href="manutencoes.html">Manutenções</a>
-        <a href="historico.html">Histórico</a>
-        <a href="perfil.html">Perfil</a>
-    </nav>
+        <nav class="menu-dashboard">
+            <a href="index.html">Início</a>
+            <a href="veiculos.html">Veículos</a>
+            <a href="despesas.html" class="ativo">Despesas</a>
+            <a href="manutencoes.html">Manutenções</a>
+            <a href="historico.html">Histórico</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
 
-    <main>
-        <h2>Controle de gastos</h2>
-        <p>Acompanhe os gastos relacionados aos seus veículos.</p>
+        <div class="menu-rodape">
+            <p>Garagem Organizada</p>
+            <span>Controle e organização</span>
+        </div>
 
-        <section>
-            <h3>Combustível</h3>
-            <p>Valor: R$ 250,00</p>
+    </aside>
+
+    <main class="dashboard-conteudo">
+
+        <div class="despesas-topo">
+            <h1>DESPESAS</h1>
+            <p>Controle financeiro da garagem</p>
+        </div>
+
+        <section class="despesas-indicadores">
+
+            <div class="cartao-despesa">
+                <p>TOTAL GASTO</p>
+                <h2>R$ 7.520</h2>
+            </div>
+
+            <div class="cartao-despesa">
+                <p>MÉDIA MENSAL</p>
+                <h2>R$ 1.253</h2>
+            </div>
+
         </section>
 
-        <section>
-            <h3>Manutenção</h3>
-            <p>Valor: R$ 300,00</p>
+        <section class="grafico-despesas">
+
+            <h2>EVOLUÇÃO MENSAL</h2>
+
+            <div class="grafico-area">
+
+                <div class="escala-valores">
+                    <span>R$ 3.000</span>
+                    <span>R$ 2.250</span>
+                    <span>R$ 1.500</span>
+                    <span>R$ 750</span>
+                    <span>R$ 0</span>
+                </div>
+
+                <div class="grafico-colunas">
+
+                    <div class="coluna-mes">
+                        <div class="barra-despesa mes-jun"></div>
+                        <span>Jun</span>
+                    </div>
+
+                    <div class="coluna-mes">
+                        <div class="barra-despesa mes-jul"></div>
+                        <span>Jul</span>
+                    </div>
+
+                    <div class="coluna-mes">
+                        <div class="barra-despesa mes-ago"></div>
+                        <span>Ago</span>
+                    </div>
+
+                    <div class="coluna-mes">
+                        <div class="barra-despesa mes-set"></div>
+                        <span>Set</span>
+                    </div>
+
+                    <div class="coluna-mes">
+                        <div class="barra-despesa mes-out"></div>
+                        <span>Out</span>
+                    </div>
+
+                    <div class="coluna-mes">
+                        <div class="barra-despesa mes-nov"></div>
+                        <span>Nov</span>
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
-        <section>
-            <h3>Outras despesas</h3>
-            <p>Valor: R$ 135,00</p>
-        </section>
+        <footer class="rodape-dashboard">
+            Garagem Organizada - Controle e organização de veículos.
+        </footer>
 
-        <section>
-            <h3>Total de despesas</h3>
-            <p>R$ 685,00</p>
-        </section>
     </main>
 
 </div>
 
-<footer>
-    Garagem Organizada
-</footer>
-
 </body>
 </html>
+
