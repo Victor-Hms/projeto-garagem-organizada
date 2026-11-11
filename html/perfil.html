@@ -3,70 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Perfil - Garagem Organizada</title>
+    <title>Perfil - Garagem Organizada</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="pagina-inicial">
 
-<header>
-    <img src="../img/Logo-Garagem Organizada.png" alt="Logo Garagem Organizada" class="logo">
-    <p>Controle simples para seus veículos</p>
-</header>
+    <div class="dashboard">
 
-<div class="titulo">
-    <h2>Perfil</h2>
-</div>
+        <aside class="menu-lateral">
 
-<div class="pagina">
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="veiculos.html">Veículos</a>
-        <a href="despesas.html">Despesas</a>
-        <a href="manutencoes.html">Manutenções</a>
-        <a href="historico.html">Histórico</a>
-        <a href="perfil.html">Perfil</a>
-    </nav>
+            <div class="marca">
+                <img src="../img/Logo-Garagem Organizada.png"
+                     alt="Logo Garagem Organizada"
+                     class="logo">
+            </div>
 
-    <main>
-        <h2>Informações do proprietário</h2>
+            <nav class="menu-dashboard">
+                <a href="index.html">Início</a>
+                <a href="veiculos.html">Veículos</a>
+                <a href="despesas.html">Despesas</a>
+                <a href="manutencoes.html">Manutenções</a>
+                <a href="historico.html">Histórico</a>
+                <a href="perfil.html" class="ativo">Perfil</a>
+            </nav>
 
-        <section>
-            <h3>Dados pessoais</h3>
+            <div class="menu-rodape">
+                <p>GARAGEM ORGANIZADA</p>
+                <span>Seu controle automotivo</span>
+            </div>
 
-            <form>
-                <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="nome"
-                       placeholder="Digite seu nome">
+        </aside>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email"
-                       placeholder="Digite seu e-mail">
+        <main class="dashboard-conteudo">
 
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone"
-                       placeholder="Digite seu telefone">
+            <div class="dashboard-topo">
+                <div>
+                    <h1>Meu Perfil</h1>
+                    <p>Gerencie suas informações pessoais.</p>
+                </div>
 
-                <button type="button">Salvar alterações</button>
-            </form>
-        </section>
+                <span class="status-sistema">PROPRIETÁRIO</span>
+            </div>
 
-        <section>
-            <h3>Sobre o sistema</h3>
+            <div class="perfil-layout">
 
-            <p>
-                O Garagem Organizada ajuda a organizar veículos,
-                despesas e manutenções em um único lugar.
-            </p>
-        </section>
-    </main>
-</div>
+                <div class="perfil-principal">
 
-<footer>
-    Projeto acadêmico
-</footer>
+                    <section class="perfil-introducao">
+                        <span>CONFIGURAÇÕES DA CONTA</span>
+                        <h2>Informações do proprietário</h2>
+                        <p>Mantenha seus dados pessoais organizados no sistema.</p>
+                    </section>
+
+                    <section class="perfil-dados">
+
+                        <h2>Dados pessoais</h2>
+                        <p>Preencha os campos abaixo com suas informações.</p>
+
+                        <form>
+
+                            <div class="campo-perfil">
+                                <label for="nome">Nome completo:</label>
+                                <input type="text" id="nome" name="nome"
+                                       placeholder="Digite seu nome">
+                            </div>
+
+                            <div class="campo-perfil">
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="email"
+                                       placeholder="Digite seu e-mail">
+                            </div>
+
+                            <div class="campo-perfil">
+                                <label for="telefone">Telefone:</label>
+                                <input type="tel" id="telefone" name="telefone"
+                                       placeholder="Digite seu telefone">
+                            </div>
+
+                            <button type="button">Salvar alterações</button>
+
+                        </form>
+
+                    </section>
+
+                    <section class="perfil-sistema">
+
+                        <h2>Sobre o sistema</h2>
+
+                        <p>
+                            O Garagem Organizada ajuda a organizar veículos,
+                            despesas e manutenções em um único lugar.
+                        </p>
+
+                    </section>
+
+                </div>
+
+                <aside class="perfil-painel-lateral">
+
+                    <h2>Resumo da garagem</h2>
+                    <p>Visão geral dos seus registros.</p>
+
+                    <div class="perfil-resumo-item">
+                        <span>VEÍCULOS REGISTRADOS</span>
+                        <h3>02</h3>
+                        <p>Veículos na garagem</p>
+                    </div>
+
+                    <div class="perfil-resumo-item">
+                        <span>TOTAL DE DESPESAS</span>
+                        <h3>R$ 0,00</h3>
+                        <p>Gastos registrados</p>
+                    </div>
+
+                    <div class="perfil-resumo-item">
+                        <span>MÉDIA MENSAL</span>
+                        <h3>R$ 0,00</h3>
+                        <p>Média de gastos por mês</p>
+                    </div>
+
+                </aside>
+
+            </div>
+
+            <footer class="rodape-dashboard">
+                Garagem Organizada - Controle e organização automotiva
+            </footer>
+
+        </main>
+
+    </div>
 
 </body>
 </html>
-
 

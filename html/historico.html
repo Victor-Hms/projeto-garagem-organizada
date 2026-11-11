@@ -7,51 +7,86 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="pagina-inicial">
 
-<header>
-    <img src="../img/Logo-Garagem Organizada.png" alt="Logo Garagem Organizada" class="logo">
-    <p>Controle simples para seus veículos</p>
-</header>
+    <div class="dashboard">
 
-<div class="titulo">
-    <h2>Histórico</h2>
-</div>
+        <aside class="menu-lateral">
 
-<div class="pagina">
+            <div class="marca">
+                <img src="../img/Logo-Garagem Organizada.png"
+                     alt="Logo Garagem Organizada"
+                     class="logo">
+            </div>
 
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="veiculos.html">Veículos</a>
-        <a href="despesas.html">Despesas</a>
-        <a href="manutencoes.html">Manutenções</a>
-        <a href="historico.html">Histórico</a>
-        <a href="perfil.html">Perfil</a>
-    </nav>
+            <nav class="menu-dashboard">
+                <a href="index.html">Início</a>
+                <a href="veiculos.html">Veículos</a>
+                <a href="despesas.html">Despesas</a>
+                <a href="manutencoes.html">Manutenções</a>
+                <a href="historico.html" class="ativo">Histórico</a>
+                <a href="perfil.html">Perfil</a>
+            </nav>
 
-    <main>
-        <h2>Serviços realizados</h2>
-        <p>Consulte os registros anteriores dos veículos.</p>
+            <div class="menu-rodape">
+                <p>GARAGEM ORGANIZADA</p>
+                <span>Seu controle automotivo</span>
+            </div>
 
-        <section>
-            <h3>Troca de óleo</h3>
-            <p>Veículo: BMW M3</p>
-            <p>Data: 15/08/2026</p>
-        </section>
+        </aside>
 
-        <section>
-            <h3>Revisão geral</h3>
-            <p>Veículo: Honda Africa Twin</p>
-            <p>Data: 10/09/2026</p>
-        </section>
+        <main class="dashboard-conteudo">
 
-    </main>
+            <div class="dashboard-topo">
+                <div>
+                    <h1>Histórico</h1>
+                    <p>Consulte os serviços realizados nos seus veículos.</p>
+                </div>
 
-</div>
+                <span class="status-sistema">REGISTROS</span>
+            </div>
 
-<footer>
-    Garagem Organizada
-</footer>
+            <section class="historico-introducao">
+                <span>CONTROLE AUTOMOTIVO</span>
+                <h2>Serviços realizados</h2>
+                <p>Acompanhe os registros anteriores de manutenção dos seus veículos.</p>
+            </section>
+
+            <section class="lista-historico">
+
+                <div class="registro-historico">
+                    <div class="registro-topo">
+                        <h2>Troca de óleo</h2>
+                        <span class="registro-concluido">REALIZADO</span>
+                    </div>
+
+                    <div class="registro-informacoes">
+                        <p><strong>Veículo:</strong> BMW M3</p>
+                        <p><strong>Data:</strong> 15/08/2026</p>
+                    </div>
+                </div>
+
+                <div class="registro-historico">
+                    <div class="registro-topo">
+                        <h2>Revisão geral</h2>
+                        <span class="registro-concluido">REALIZADO</span>
+                    </div>
+
+                    <div class="registro-informacoes">
+                        <p><strong>Veículo:</strong> Honda Africa Twin</p>
+                        <p><strong>Data:</strong> 10/09/2026</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <footer class="rodape-dashboard">
+                Garagem Organizada - Controle e organização automotiva
+            </footer>
+
+        </main>
+
+    </div>
 
 </body>
 </html>

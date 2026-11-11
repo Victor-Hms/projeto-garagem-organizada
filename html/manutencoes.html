@@ -7,54 +7,68 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="pagina-inicial">
 
-<header>
-    <img src="../img/Logo-Garagem Organizada.png" alt="Logo Garagem Organizada" class="logo">
-    <p>Controle simples para seus veículos</p>
-</header>
+    <div class="dashboard">
 
-<div class="titulo">
-    <h2>Manutenções</h2>
-</div>
+        <aside class="menu-lateral">
 
-<div class="pagina">
+            <div class="marca">
+                <img src="../img/Logo-Garagem Organizada.png"
+                     alt="Logo Garagem Organizada"
+                     class="logo">
+            </div>
 
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="veiculos.html">Veículos</a>
-        <a href="despesas.html">Despesas</a>
-        <a href="manutencoes.html">Manutenções</a>
-        <a href="historico.html">Histórico</a>
-        <a href="perfil.html">Perfil</a>
-    </nav>
+            <nav class="menu-dashboard">
+                <a href="index.html">Início</a>
+                <a href="veiculos.html">Veículos</a>
+                <a href="despesas.html">Despesas</a>
+                <a href="manutencoes.html" class="ativo">Manutenções</a>
+                <a href="historico.html">Histórico</a>
+                <a href="perfil.html">Perfil</a>
+            </nav>
 
-    <main>
-        <h2>Agenda de manutenções</h2>
-        <p>Organize os próximos serviços dos seus veículos.</p>
+            <div class="menu-rodape">
+                <p>GARAGEM ORGANIZADA</p>
+                <span>Seu controle automotivo</span>
+            </div>
 
-        <section>
-            <h3>Revisão do automóvel</h3>
-            <p>Veículo: BMW M3</p>
-            <p>Data prevista: 30/10/2026</p>
-            <p>Status: Pendente</p>
-        </section>
+        </aside>
 
-        <section>
-            <h3>Troca de óleo</h3>
-            <p>Veículo: Honda Africa Twin</p>
-            <p>Data prevista: 05/11/2026</p>
-            <p>Status: Pendente</p>
-        </section>
+        <main class="dashboard-conteudo">
 
-    </main>
+            <div class="despesas-topo">
+                <div>
+                    <h1>Manutenções</h1>
+                    <p>Organize os próximos serviços dos seus veículos.</p>
+                </div>
 
-</div>
+                <a href="#" class="botao-despesa">+ Adicionar manutenção</a>
+            </div>
 
-<footer>
-    Garagem Organizada
-</footer>
+            <section>
+                <div>
+                    <h3>Revisão do automóvel</h3>
+                    <p>Veículo: BMW M3</p>
+                    <p>Data prevista: 20/12/2026</p>
+                    <p>Status: Pendente</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Troca de óleo</h2>
+                <p>Veículo: Honda Africa Twin</p>
+                <p>Data prevista: 29/11/2026</p>
+                <p>Status: Pendente</p>
+            </section>
+
+            <footer class="rodape-dashboard">
+                Garagem Organizada - Controle e organização automotiva
+            </footer>
+
+        </main>
+
+    </div>
 
 </body>
 </html>
-
