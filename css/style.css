@@ -2,20 +2,13 @@ body {
     margin: 0;
     background-color: #0b0b0b;
     color: #ffffff;
-    /* font: abreviação de estilo, tamanho/altura de linha e família */
     font: normal 14px/1.5 Arial, sans-serif;
 }
-
-
-/* =====================================================
-   MENU LATERAL (fica à esquerda com float)
-   16% de largura + 2% de padding de cada lado = 20%
-===================================================== */
 
 .menu-lateral {
     float: left;
     width: 16%;
-    min-height: 100vh;               /* (extra) menu com a altura da tela */
+    min-height: 100vh;
     padding: 0 2%;
     background-color: #303538;
 }
@@ -23,15 +16,15 @@ body {
 .marca {
     padding-top: 20px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #484d50; /* (extra) */
+    border-bottom: 1px solid #484d50;
     text-align: center;
 }
 
 .marca .logo {
-    display: block;                   /* (extra) */
-    width: 100%;                      /* (extra) */
-    max-width: 170px;                 /* (extra) */
-    margin: 0 auto;                   /* centraliza a logo */
+    display: block;
+    width: 100%;
+    max-width: 170px;
+    margin: 0 auto;
 }
 
 .menu-dashboard {
@@ -40,7 +33,7 @@ body {
 }
 
 .menu-dashboard a {
-    display: block;                   /* (extra) link vira bloco */
+    display: block;
     padding: 13px;
     margin-bottom: 8px;
     color: #c5c8ca;
@@ -52,13 +45,13 @@ body {
 .menu-dashboard a.ativo {
     background-color: #402713;
     color: #ff8a00;
-    border-left: 3px solid #ff6a00;   /* (extra) */
+    border-left: 3px solid #ff6a00;
 }
 
 .menu-rodape {
     margin-top: 30px;
     padding-top: 15px;
-    border-top: 1px solid #484d50;    /* (extra) */
+    border-top: 1px solid #484d50;
 }
 
 .menu-rodape p {
@@ -66,7 +59,7 @@ body {
     color: #ffffff;
     font-size: 12px;
     font-weight: bold;
-    text-transform: uppercase;        /* deixa igual em todas as páginas */
+    text-transform: uppercase;
 }
 
 .menu-rodape span {
@@ -74,17 +67,14 @@ body {
     font-size: 11px;
 }
 
-
-/* =====================================================
-   CONTEÚDO PRINCIPAL (float ao lado do menu)
-   74% + 2,5% de padding de cada lado = 79%  (sobra 1%)
-===================================================== */
-
 .dashboard-conteudo {
     float: left;
     width: 74%;
     padding: 30px 2.5%;
     background-color: #0b0b0b;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 60px);
 }
 
 .dashboard-conteudo h2 {
@@ -101,23 +91,16 @@ body {
     word-spacing: 1px;
 }
 
-/* Cartão genérico: toda <section> dentro do conteúdo */
 .dashboard-conteudo section {
     margin-bottom: 20px;
     padding: 20px;
     background-color: #303538;
-    border: 1px solid #484d50;        /* (extra) */
+    border: 1px solid #484d50;
 }
-
-
-/* =====================================================
-   CABEÇALHO DAS PÁGINAS
-   (o div com título fica à esquerda, o selo/botão à direita)
-===================================================== */
 
 .dashboard-topo,
 .despesas-topo {
-    overflow: hidden;                 /* (extra) segura os floats dentro */
+    overflow: hidden;
     margin-bottom: 30px;
 }
 
@@ -145,23 +128,17 @@ body {
     padding: 8px 12px;
     background-color: #402713;
     color: #ff8a00;
-    border: 1px solid #ff8a00;        /* (extra) */
+    border: 1px solid #ff8a00;
     font-size: 11px;
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-
-/* =====================================================
-   BLOCOS DE INTRODUÇÃO (início, veículos, histórico, perfil)
-   Seletor mais forte para a borda laranja realmente aparecer
-===================================================== */
-
 .dashboard-conteudo .boas-vindas,
 .dashboard-conteudo .historico-introducao,
 .dashboard-conteudo .perfil-introducao {
-    border-left: 4px solid #ff6a00;   /* (extra) */
+    border-left: 4px solid #ff6a00;
 }
 
 .boas-vindas span,
@@ -180,13 +157,8 @@ body {
     font-size: 23px;
 }
 
-
-/* =====================================================
-   BOTÕES
-===================================================== */
-
 .botoes-acoes a {
-    display: inline-block;            /* (extra) padding funciona no link */
+    display: inline-block;
     margin-right: 12px;
     margin-top: 10px;
     padding: 12px 16px;
@@ -207,17 +179,12 @@ body {
     text-decoration: none;
 }
 
-
-/* =====================================================
-   RODAPÉ
-===================================================== */
-
 .rodape-dashboard {
-    clear: both;                      /* (extra) fica abaixo de qualquer float */
-    margin-top: 30px;
+    clear: both;
+    margin-top: auto;
     padding: 20px;
     background-color: #303538;
-    border: 1px solid #484d50;        /* (extra) */
+    border: 1px solid #484d50;
     color: #c1c5c8;
     font-size: 12px;
     font-style: italic;
@@ -225,14 +192,8 @@ body {
     text-align: center;
 }
 
-
-/* =====================================================
-   PÁGINA INICIAL
-===================================================== */
-
-/* 4 cartões lado a lado: 20% + 2% de padding + 1,5% de margem */
 .indicadores {
-    overflow: hidden;                 /* (extra) */
+    overflow: hidden;
 }
 
 .cartao-indicador {
@@ -240,7 +201,7 @@ body {
     width: 20%;
     margin-right: 1.5%;
     padding: 15px 1%;
-    border-top: 3px solid #ff6a00;    /* (extra) */
+    border-top: 3px solid #ff6a00;
 }
 
 .cartao-indicador span {
@@ -259,9 +220,8 @@ body {
     font-size: 12px;
 }
 
-/* Resumo de despesas à esquerda, próximas manutenções à direita */
 .dashboard-inferior {
-    overflow: hidden;                 /* (extra) */
+    overflow: hidden;
 }
 
 .painel-despesas {
@@ -278,20 +238,14 @@ body {
     margin-top: 15px;
     padding: 80px 20px;
     background-color: #242424;
-    border: 1px dashed #ff6a00;       /* (extra) */
+    border: 1px dashed #ff6a00;
     color: #c1c5c8;
     font-size: 13px;
     text-align: center;
 }
 
-
-/* =====================================================
-   PÁGINA DE VEÍCULOS
-   Imagem flutua à esquerda, texto ao lado, botões embaixo
-===================================================== */
-
 .veiculo {
-    overflow: hidden;                 /* (extra) */
+    overflow: hidden;
 }
 
 .veiculo img {
@@ -301,26 +255,20 @@ body {
 }
 
 .veiculo .botoes-acoes {
-    clear: both;                      /* (extra) botões abaixo da imagem */
+    clear: both;
 }
 
-
-/* =====================================================
-   PÁGINA DE DESPESAS
-===================================================== */
-
-/* 2 cartões lado a lado */
 .despesas-indicadores {
-    overflow: hidden;                 /* (extra) */
+    overflow: hidden;
 }
 
 .cartao-despesa {
     float: left;
     width: 44%;
-    margin-right: 3%;
+    margin-right: 1.5%;
     padding: 20px 2%;
     background-color: #242424;
-    border-top: 3px solid #ff6a00;    /* (extra) */
+    border-top: 3px solid #ff6a00;
 }
 
 .dashboard-conteudo .cartao-despesa p {
@@ -339,9 +287,8 @@ body {
     margin-bottom: 30px;
 }
 
-/* Gráfico: escala à esquerda e colunas à direita (float) */
 .grafico-area {
-    overflow: hidden;                 /* (extra) */
+    overflow: hidden;
 }
 
 .escala-valores {
@@ -350,8 +297,8 @@ body {
 }
 
 .escala-valores span {
-    display: block;                   /* (extra) */
-    height: 56px;                     /* (extra) 5 valores x 56px = 280px */
+    display: block;
+    height: 56px;
     color: #c1c5c8;
     font-size: 12px;
 }
@@ -359,8 +306,8 @@ body {
 .grafico-colunas {
     float: left;
     width: 88%;
-    height: 280px;                    /* (extra) */
-    border-bottom: 1px solid #484d50; /* (extra) linha do eixo */
+    height: 280px;
+    border-bottom: 1px solid #484d50;
 }
 
 .coluna-mes {
@@ -370,32 +317,27 @@ body {
 }
 
 .barra-despesa {
-    width: 60%;                       /* (extra) altura entra quando houver dados */
+    width: 60%;
     margin: 0 auto;
     background-color: #ff6a00;
 }
 
 .coluna-mes span {
-    display: block;                   /* (extra) */
-    margin-top: 255px;                /* joga o nome do mês para a base */
+    display: block;
+    margin-top: 255px;
     color: #c1c5c8;
     font-size: 14px;
 }
-
-
-/* =====================================================
-   PÁGINA DE HISTÓRICO
-===================================================== */
 
 .registro-historico {
     margin-bottom: 20px;
     padding: 20px;
     background-color: #242424;
-    border-left: 4px solid #ff6a00;   /* (extra) */
+    border-left: 4px solid #ff6a00;
 }
 
 .registro-topo {
-    overflow: hidden;                 /* (extra) */
+    overflow: hidden;
 }
 
 .dashboard-conteudo .registro-topo h2 {
@@ -408,7 +350,7 @@ body {
     float: right;
     padding: 6px 10px;
     color: #55b879;
-    border: 1px solid #55b879;        /* (extra) */
+    border: 1px solid #55b879;
     font-size: 11px;
     font-weight: bold;
 }
@@ -416,7 +358,7 @@ body {
 .registro-informacoes {
     margin-top: 15px;
     padding-top: 10px;
-    border-top: 1px solid #484d50;    /* (extra) */
+    border-top: 1px solid #484d50;
 }
 
 .dashboard-conteudo .registro-informacoes p {
@@ -427,14 +369,8 @@ body {
     color: #ffffff;
 }
 
-
-/* =====================================================
-   PÁGINA DE PERFIL
-   Formulário à esquerda e resumo à direita (float)
-===================================================== */
-
 .perfil-layout {
-    overflow: hidden;                 /* (extra) */
+    overflow: hidden;
 }
 
 .perfil-principal {
@@ -447,7 +383,7 @@ body {
     width: 25%;
     padding: 20px;
     background-color: #303538;
-    border: 1px solid #484d50;        /* (extra) */
+    border: 1px solid #484d50;
 }
 
 .perfil-painel-lateral h2 {
@@ -461,9 +397,8 @@ body {
     font-size: 13px;
 }
 
-/* Campos do formulário */
 .campo-perfil label {
-    display: block;                   /* (extra) */
+    display: block;
     margin-top: 15px;
     margin-bottom: 8px;
     color: #ffffff;
@@ -471,15 +406,14 @@ body {
     font-weight: bold;
 }
 
-/* Seletor de id, agrupado: cada input tem um id no HTML */
 #nome,
 #email,
 #telefone {
-    width: 90%;                       /* (extra) */
+    width: 90%;
     padding: 12px;
     background-color: #242424;
     color: #ffffff;
-    border: 1px solid #484d50;        /* (extra) */
+    border: 1px solid #484d50;
     font-family: Arial, sans-serif;
     font-size: 14px;
 }
@@ -489,19 +423,18 @@ body {
     padding: 12px 20px;
     background-color: #ff6a00;
     color: #ffffff;
-    border: none;                     /* (extra) */
+    border: none;
     font-family: Arial, sans-serif;
     font-size: 13px;
     font-weight: bold;
-    cursor: pointer;                  /* (extra) */
+    cursor: pointer;
 }
 
-/* Itens do resumo da garagem */
 .perfil-resumo-item {
     margin-top: 15px;
     padding: 15px;
     background-color: #242424;
-    border-left: 3px solid #ff6a00;   /* (extra) */
+    border-left: 3px solid #ff6a00;
 }
 
 .perfil-resumo-item span {
